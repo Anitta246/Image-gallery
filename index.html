@@ -1,0 +1,68 @@
+<head>
+    <style>
+        .gallery{
+            display: grid;
+            background-color: blueviolet;
+            grid-template-areas: 
+            "header header header"
+            "item item item"
+            "item item item";
+            grid-template-columns: repeat(3);
+            grid-template-rows: 1fr 2fr 2fr;
+            gap: 40px;
+            padding: 20px;
+        }
+        .header{
+            background-color: blue;
+            text-align: center;
+            padding: 5px;
+        }
+        .item{
+            text-align: center;
+        }
+        .item img{
+            width: 250px;
+            height: 200px;
+            margin-top: 10px;
+            transition: transform 0.3s;
+        }
+        .item img:hover{
+            transform: scale(1,1)
+        }
+        .cap{
+            color: aliceblue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Cars</h1>
+    </div>
+    <div class="gallery">
+        <div class="item">
+            <img src="BLACK CARS.jpg">
+            <p class="cap">Black cars</p>
+        </div>
+        <div class="item">
+            <img src="BLACK JEEP.jpeg">
+            <p class="cap">Black jeep</p>
+        </div>
+        <div class="item">
+            <img src="BMW.jpeg">
+            <p class="cap">BMW</p>
+        </div>
+        <div class="item">
+            <img src="swift.webp">
+            <p class="cap">Swift</p>
+        </div>
+        <div class="item">
+            <img src="SAfari.jpeg">
+            <p class="cap">safari</p>
+        </div>
+         <div class="item">
+            <img src="Top free car.jpg">
+            <p class="cap">top free car</p>
+        </div>
+    </div>
+</body>
